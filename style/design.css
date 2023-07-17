@@ -1,0 +1,185 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+  }
+  /* Its share style */
+  .primary-color{
+    background: #E02C6D;
+  }
+  .primary-small-font{
+    font-size: 0.625rem;
+  }
+.primary-medium-font{
+    font-size: 1.07rem;
+}
+body{
+    max-width: 62.5rem;
+    background: #FFF;
+    margin: 0px auto;
+}
+
+
+
+/* From here the nav container start */
+
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.nav-title{
+    color: #3A3A3A;
+    font-size: 1.07rem;
+    font-weight: 700;
+}
+.nav-right{
+    display: flex;
+     gap: 34px;
+}
+.nav-right a{
+    color: #3A3A3A;
+    font-size: 0.714rem;
+    font-weight: 600;
+    text-decoration: none;
+   
+}
+.nav-right li{
+    list-style: none;
+}
+.nav-icon{
+    width: 1.07rem;
+    height: 1.07rem;
+}
+
+/* From here the journey container start */
+
+
+.journey-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42.8px;
+}
+.journey-title{
+     color: #3A3A3A;
+    font-size: 1.32rem;
+    font-weight: 700;
+    width: 20rem;
+
+}
+.journey-description{
+    color: #3A3A3A;
+    font-size: 0.71rem;
+    font-weight: 600;
+    width: 22.54rem;
+    padding: 20px 0px 26px 0px;
+}
+.journey-button{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: 0px;
+}
+.journey-image{
+    height: 21.21rem;
+    width: 21.21rem;
+    border-radius: 475px;
+    border: 3px solid var(--brand-purple-100, #F1E4FF);
+    background-image: url("../images/Circle\ design.svg"); 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    body{
+       
+        margin: 0px auto;
+    }
+    
+    .nav-container{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .nav-right{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    .journey-container{
+        flex-direction: column;
+    }
+    
+    .journey-description,
+    .journey-title{
+        width: 100%;
+        text-align: center;
+    }
+    .journey-button{
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+    .journey-image{
+        padding: 50px;
+    }
+
+    
+   
+    
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .nav-container{
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .nav-right{
+        
+        gap: 10px;
+    }
+    body{
+        
+        margin: 0px auto;
+    }
+
+
+    .journey-image{
+        padding: 30px;
+    }
+    .journey-container{
+        flex-direction: column-reverse;
+    }
+    .journey-description,
+    .journey-title{
+        width: 100%;
+        text-align: center;
+    }
+    .journey-button{
+        margin-left: 240px;
+        margin-bottom: 10px;
+    }
+}
